@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <style>
+      .mySlides {display:none}
+      .w3-left, .w3-right, .w3-badge {cursor:pointer}
+      .w3-badge {height:13px;width:13px;padding:0}
+      .w3-display-container h4 {
+        color: white;
+        background: #00A5E5;
+        margin: 0 0 0 0;
+        padding: 6px 14px;
+        font-size: 16px;
+      }
+      .navbar-border {
+        width: 100%;
+        height: 3px;
+        margin: 3px 0;
+      }
+    </style>
+
+  </head>
+  <title>Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .mySlides {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+  </style>
+  <body>
+
+  <!-- Navbar section -->
+    <div class="personal-topnav">
+      <ul>
+        <li><a href="#">JUL 05 2018</a></li>
+        <li class="right-side"><a href="#">Sign Out</a></li>
+        <li class="right-side"><a href="#">Admin님</a></li>
+        <li class="right-side"><a href="#">Home</a></li>
+      </ul>
+    </div>
+
+    <div class="personal-navbar" id="myTopnav"></div>
+      <!-- <div class="personal-nav-item">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+      </div> -->
+
+      <div class="personal-logo">
+        <a href="#" class="logo-button">BRUEUT</a>
+      </div>
+
+      <div class="personal-dropdown">
+        <button class="personal-dropbtn">커뮤니티</button>
+        <div class="personal-dropdown-content">
+          <a href="#">KSA 소식</a>
+          <a href="#">일리노이 소식</a>
+          <a href="#">KSA 스폰서</a>
+          <a href="#">미시 UIUC</a>
+          <a href="#">자유게시판</a>
+          <a href="#">대학원</a>
+          <a href="#">동아리 소개</a>
+        </div>
+      </div>
+
+
+        <div class="active-dropdown">
+          <button class="active-dropbtn">벼룩시장
+
+          </button>
+          <div class="active-dropdown-content">
+            <a href="#">자동차</a>
+            <a href="#">하우징</a>
+            <a href="#">사고팔고</a>
+            <a href="#">구인구직</a>
+          </div>
+        </div>
+
+         <div class="personal-dropdown">
+           <button class="personal-dropbtn">취업정보</button>
+           <div class="personal-dropdown-content">
+             <a href="#">취업정보</a>
+             <a href="#">방문 채용설명회</a>
+             <a href="#">커리어센터 정보</a>
+           </div>
+          </div>
+
+          <div class="personal-dropdown">
+            <button class="personal-dropbtn">KSA 소개</button>
+            <div class="personal-dropdown-content">
+              <a href="#">인사말</a>
+              <a href="#">KSA 임원진</a>
+              <a href="#">역대임원진</a>
+              <a href="#">연혁</a>
+            </div>
+           </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <hr class="navbar-border">
+
+   <div class="w3-content w3-display-container" style="max-width:800px">
+      <h4>Upcoming Events</h3>
+    </div>
+
+    <div class="w3-content w3-display-container" style="max-width:800px" >
+      <img class="mySlides" src="https://www.sustain.ucla.edu/wp-content/uploads/2013/06/Hedrick-Night.jpg" style="width:100%; max-height: 400px">
+      <img class="mySlides" src="https://summer.ucla.edu/sites/ss/files/styles/feature-slider/public/JA_UCLA_Day3_2083_0.jpg?itok=Iu-44-a_" style="width:100%; max-height: 400px">
+      <img class="mySlides" src="https://www.sustain.ucla.edu/wp-content/uploads/2013/06/Hedrick-Night.jpg" style="width:100%; max-height: 400px">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-white";
+    }
+    </script>
+
+  </body>
+</html>

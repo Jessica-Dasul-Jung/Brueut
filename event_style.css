@@ -1,0 +1,54 @@
+
+body {
+	font-family: 'Markazi Text', serif;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+/* title section */
+.title {
+	padding: 5%;
+	text-align: center;
+	background: url(../BRUEUT/src/event.jpg);	
+	background-position: center;
+	background-size: cover;
+}
+
+h1 {
+	color: white;
+}
+h2 {
+	color: white;
+}
+/*h2 {
+	color: #00A5E5;
+	font-weight: 600;
+	text-shadow: 0 2px 2px #ACC9CC,
+					0 4px 6px black;
+	letter-spacing: 0.15rem;
+}
+*/
+.btn-outline-primary {
+    border: 2px inset #e10b86;
+    margin: 7% auto;
+}
+
+
+.btn-event {
+	border-radius: 0px;
+	margin: 0;
+	margin-bottom: 7%;
+}
+
+.buffer {
+	height: 30px;
+}
+
+.content {
+	padding: 0;
+	border: 0;
+}
+

@@ -1,0 +1,26 @@
+
+body {
+	font-family: 'Markazi Text', serif;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+/* title section */
+.title {
+	padding: 5%;
+	text-align: center;
+	background: url(../BRUEUT/src/market.jpg);	
+	background-position: center;
+	background-size: cover;
+}
+
+.btn-outline-primary {
+    border: 2px inset #FFD346;
+    margin: 7% auto;
+}
+
+
+
